@@ -1,35 +1,37 @@
-# MOE-B911 — MKB GitHub map
+# MOE-B911 — MKB GitHub Map
 
-Private account for Mohammed Khaled Bajeri (MKB). Repos are categorized by **topic**, not dumped in one pile.
+Private account for **Mohammed Khaled Bajeri (MKB)**.
 
-## Categories
+> GitHub **topics** are always lowercase (platform rule). Categories below use house Title Case in this map.
 
-| Topic | Meaning | Repos |
+## Categories (Title Case)
+
+| Category | Topic tag (GitHub) | Repo |
 | --- | --- | --- |
-| `active` + `command-hub` | Live personal OS | [`mkb-command-hub`](https://github.com/MOE-B911/mkb-command-hub) |
-| `vault` + `identity` | Vault / envelope index apps | [`envelope-vault-index`](https://github.com/MOE-B911/envelope-vault-index) |
-| `stub` + `scaffold` | Boilerplate only — not live systems | [`THE-BOT`](https://github.com/MOE-B911/THE-BOT) |
+| **ACTIVE** | `active` | [`mkb-command-hub`](https://github.com/MOE-B911/mkb-command-hub) — Personal Operating System |
+| **ARCHIVE** | `archive` | [`envelope-vault-index`](https://github.com/MOE-B911/envelope-vault-index) — Envelope Archive (face-sheet / intake / records) |
+| **NOT LIVE** | `not-live` | [`THE-BOT`](https://github.com/MOE-B911/THE-BOT) — empty starter only |
+| **MAP** | — | [`MOE-B911`](https://github.com/MOE-B911/MOE-B911) — this profile README |
 
-## Repo roles (short)
+## What each repo is
 
-1. **mkb-command-hub** — Personal operating system (Next.js + Supabase). Primary active codebase.
-2. **envelope-vault-index** — Envelope / vault index (Vite + Supabase). Identity track. Do not commit `.env`.
-3. **THE-BOT** — Empty bot scaffold. Not an identity vault. Keep as stub until a real bot lives here.
+1. **mkb-command-hub** — Your Command Hub app. Live/active codebase.
+2. **envelope-vault-index** — Envelope **Archive** app (records, face sheets, AI intake bar). Not a password vault; “envelope” = document envelopes into an archive index.
+3. **THE-BOT** — Placeholder. Only has `.env.example` with `BOT_TOKEN=`. Safe to ignore until a real bot is built.
 
-## Not on this GitHub account (local `~/Developer`)
+## Not MKB-owned (ignore for “my GitHub”)
 
-| Folder | Status |
-| --- | --- |
-| `stationery-chest` | Local only (no git remote) |
-| `vlrs` | Local git, no GitHub remote |
-| `OmniRoute` | Upstream clone (`diegosouzapw/OmniRoute`) — not MKB-owned |
-| `claude-plugins-official` | Upstream Anthropic clone — not MKB-owned |
+These live under `~/Developer` but point at **other people’s** GitHub:
+
+- `OmniRoute` → `diegosouzapw/OmniRoute` (third-party)
+- `claude-plugins-official` → `anthropics/claude-plugins-official` (Anthropic samples)
+
+Local-only (no MOE-B911 remote yet): `stationery-chest`, `vlrs`.
 
 ## Rules
 
-- New MKB code gets a **topic** on day one (`active`, `vault`, `brand`, `fab`, `ops`, `stub`).
-- Never commit `.env` / tokens. Use `.env.example` only.
-- Upstream clones stay upstream — do not rewrite history as MOE-B911 unless forking intentionally.
-- Author credit: **MKB** internally / **Mohammed Khaled Bajeri** on external surfaces.
+- New MKB code: create under `MOE-B911`, set Category in the description (**ACTIVE** / **ARCHIVE** / **NOT LIVE**), add matching lowercase topic.
+- Never commit `.env`. Rotate keys if one ever leaked.
+- Author: **MKB** internal / **Mohammed Khaled Bajeri** external.
 
-_Last organized: 2026-09-04 (DISPATCH)._
+_Last cleaned: 2026-09-05 (DISPATCH)._
